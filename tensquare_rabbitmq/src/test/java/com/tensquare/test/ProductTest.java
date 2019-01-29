@@ -25,4 +25,9 @@ public class ProductTest {
         rabbitTemplate.convertAndSend("itcast","直接模式测试");
     }
 
+    @Test
+    public void sendMsg3() {
+        rabbitTemplate.convertAndSend("topic","","wocao");
+    }
+
 }

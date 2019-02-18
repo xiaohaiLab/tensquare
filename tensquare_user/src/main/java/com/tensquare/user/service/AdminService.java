@@ -25,7 +25,7 @@ import java.util.Map;
  *
  */
 @Service
-public class AdminService {
+public class  AdminService {
 
 	@Autowired
 	private AdminDao adminDao;

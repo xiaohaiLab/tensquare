@@ -17,5 +17,6 @@ eureka:
   client:
     service-url:
       defaultZone: http://127.0.0.1:6868/eureka/
+  //跨域访问
   instance:
     prefer-ip-address: true

@@ -8,3 +8,11 @@ spring:
         server:
           git:
             uri: https://gitee.com/MaHais/configs.git
+  rabbitmq:
+    host: 192.168.25.131
+
+management:
+  endpoints:
+    web:
+      exposure:
+        exclude: bus-refresh

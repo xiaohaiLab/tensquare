@@ -6,6 +6,8 @@ import entity.PageResult;
 import entity.Result;
 import entity.StatusCode;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
 
@@ -21,6 +23,7 @@ import java.util.Map;
 @RestController
 @CrossOrigin
 @RequestMapping("/label")
+@RefreshScope
 public class LableController {
 
     @Autowired
@@ -28,6 +31,9 @@ public class LableController {
 
     @Autowired
     private HttpServletRequest request;
+
+    @Value("${hehe}")
+    private String hehe;
 
     @GetMapping
     public Result findAll() {

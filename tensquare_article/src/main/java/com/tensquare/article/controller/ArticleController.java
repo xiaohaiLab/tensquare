@@ -42,7 +42,6 @@ public class ArticleController {
 	public Result findAll(){
 		return new Result(true,StatusCode.OK,"查询成功",articleService.findAll());
 	}
-	
 	/**
 	 * 根据ID查询
 	 * @param id ID
